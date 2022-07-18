@@ -1,0 +1,121 @@
+.skills {
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.skills .header {
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .skills .header {
+    font-size: 15px;
+  }
+}
+.skills .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .skills .container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+.skills .container .skillBox {
+  color: #21035e;
+  cursor: pointer;
+}
+.skills .container .skillBox .skillTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.skills .container .skillBox .skillTitle:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 35px;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background: #1e6d1e;
+  transition: all 5s ease;
+}
+.skills .container .skillBox .skillTitle:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 35px;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background: #1e6d1e;
+  transition: all 5s ease;
+}
+.skills .container .skillBox .skillTitle .img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .skills .container .skillBox .skillTitle .img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+  }
+}
+.skills .container .skillBox .skillTitle .img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 45px 0 0 45px;
+}
+.skills .container .skillBox .skillTitle .img img {
+  width: 50px;
+  z-index: 1;
+}
+.skills .container .skillBox .skillTitle h3 {
+  color: #21035e;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
+}
+@media (max-width: 768px) {
+  .skills .container .skillBox .skillTitle h3 {
+    font-size: 18px;
+  }
+}
+.skills .container .skillBox p {
+  color: black;
+  font-size: 17px;
+  text-align: left;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .skills .container .skillBox p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

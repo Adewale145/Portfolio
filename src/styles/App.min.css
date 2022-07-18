@@ -1,0 +1,2 @@
+*{font-family:"Roboto","Fredoka",sans-serif;margin:0;overflow-x:hidden}.app{height:100vh}.app .sections{width:100%;height:calc(100vh - 70px);position:relative;top:70px;scroll-behavior:smooth;-ms-scroll-snap-type:y mandatory;scroll-snap-type:y mandatory}.app .sections::-webkit-scrollbar{display:none}.app .sections>*{width:100vw;height:calc(100vh - 70px);scroll-snap-align:start}
+/*# sourceMappingURL=App.min.css.map */

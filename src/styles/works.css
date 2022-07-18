@@ -1,0 +1,118 @@
+.works h1 {
+  font-size: 43px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .works h1 {
+    font-size: 20px;
+  }
+}
+.works .slider {
+  height: 350px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-out;
+}
+.works .slider .container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .iconLeft {
+  font-size: 37px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.works .slider .container .iconRight {
+  font-size: 37px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.works .slider .container .item {
+  width: 700px;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item .left {
+  flex: 6;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item .left .leftContainer {
+  width: 95%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.works .slider .container .item .left .leftContainer .imgContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item .left .leftContainer .imgContainer img {
+  width: 25px;
+}
+.works .slider .container .item .left .leftContainer h2 {
+  font-size: 24px;
+}
+.works .slider .container .item .left .leftContainer p {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .works .slider .container .item .left .leftContainer p {
+    display: none;
+  }
+}
+.works .slider .container .item .left .leftContainer span {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  text-align: center;
+}
+.works .slider .container .item .left .leftContainer span .icon {
+  color: black;
+  text-decoration: none;
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+}
+.works .slider .container .item .left .leftContainer span .icon:hover {
+  color: #21035e;
+  cursor: pointer;
+}
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+.works .slider .container .item .right {
+  flex: 6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item .right img {
+  width: 400px;
+}
+/*# sourceMappingURL=works.css.map */
